@@ -19,11 +19,11 @@ The system under test is RTSM, an open-source persistent spatial-memory layer: <
 | `analyze_paper.py` | recomputes `paper_analyses.json` from the trial logs (standard library only): `python analyze_paper.py` |
 | `make_figures.py` | regenerates the two results figures from the trial logs (needs matplotlib): `python make_figures.py` |
 
-**Photos.** The evidentiary photograph of every trial stop (60 files, 131 MB) is in the release asset `photos.zip`, one folder per session, EXIF and other metadata removed losslessly (the image data is byte-identical to the originals). They are not in the repository because of their size.
+**Photos.** The evidentiary photograph of every trial stop (60 files) is in the release asset `photos.zip` (release v1.0), one folder per session. The originals are iPhone HEIC files with location metadata; the released files are JPEG conversions (quality 95) with all metadata removed. They are not in the repository because of their size.
 
 ## Provenance
 
-The data trees were sealed when the campaign closed on 2026-09-04 and have not been edited since; this repository holds them byte for byte. The one-time scan, the memory arm's retrieval and the memoryless arm's masked retrieval are described in the paper's Sections 3 and 4; the trial logger that wrote these files is `agent/trial_logger.py` in the harness repository.
+The data trees (logs, manifests, protocol, results) were sealed when the campaign closed on 2026-09-04 and have not been edited since; this repository holds them byte for byte. The photographs are format-converted copies, as described above. The one-time scan, the memory arm's retrieval and the memoryless arm's masked retrieval are described in the paper's Sections 3 and 4; the trial logger that wrote these files is `agent/trial_logger.py` in the harness repository.
 
 ## Licence and citation
 
